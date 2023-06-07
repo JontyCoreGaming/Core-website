@@ -1,0 +1,13 @@
+/* File: font.css */
+@font-face {
+    font-family: 'cgcloud_b-webfont';
+    src: local('cgcloud_b-webfont'),
+         url('./fonts/cgcloud_b-webfont.woff') format('woff'),
+         url('./fonts/cgcloud_b-webfont.woff2') format('woff2');
+}
+@font-face {
+    font-family: 'cgcloud-webfont';
+    src: local('cgcloud-webfont'),
+         url('./fonts/cgcloud-webfont.woff') format('woff'),
+         url('./fonts/cgcloud-webfont.woff2') format('woff2');
+}

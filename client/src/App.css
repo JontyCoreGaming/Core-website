@@ -4,7 +4,11 @@
 
 body {
   margin: 0;
+  font-family: cgcloud-webfont;
 }
+
+/* .btn-close {
+background-color: black;} */
 
 .App-logo {
   height: 40vmin;
@@ -26,11 +30,6 @@ body {
   padding-left: 1vw;
 }
 
-/* Hero Section */
-
-.heroImage {
-  max-width: 100vw;
-}
 
 /* Compliance Section */
 
@@ -40,6 +39,7 @@ body {
   flex-direction: column;
   max-width: 95%;
 }
+
 
 .complianceCollumns {
   display: flex;
@@ -55,7 +55,16 @@ body {
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-start;
+}
 
+.link-button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  text-decoration: underline;
+  display: inline;
+  margin: 0;
+  padding: 0;
 }
 
 .footer>*:last-child {
