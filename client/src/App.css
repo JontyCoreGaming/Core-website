@@ -1,14 +1,14 @@
-.App {
-  text-align: center;  
-}
+
 
 body {
   margin: 0;
   font-family: cgcloud-webfont;
+  text-align: center;
+  
 }
 
-/* .btn-close {
-background-color: black;} */
+
+
 
 .App-logo {
   height: 40vmin;
@@ -30,6 +30,23 @@ background-color: black;} */
   padding-left: 1vw;
 }
 
+/* Welcome text */
+
+.welcomePage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.welcomePage h1{
+  color: red;
+  margin-top: 5vh;
+}
+
+.welcomePageText {
+  max-width: 80vw;
+  margin: 2vh 0 5vh 0;
+}
+
 
 /* Compliance Section */
 
@@ -40,12 +57,32 @@ background-color: black;} */
   max-width: 95%;
 }
 
+.container {
+  max-width: 85vw;
+}
 
-.complianceCollumns {
+.funStops {
+  max-width: 25vw;
+}
+.licenseText {
+  margin: 0  ;
+}
+
+.complianceTable {
+  margin-bottom: 5vh; 
+}
+
+#more {
+  display:none;
+}
+
+
+
+/* .complianceCollumns {
   display: flex;
   width: 33%;
   margin: 0px 10px 0px 20px;
-}
+} */
 
 /* Footer section */
 

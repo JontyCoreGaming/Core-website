@@ -1,10 +1,9 @@
 import React from 'react'
-import welcomeImage from '../assets/laptopDesktopDevice.png';
 
 
 const WelcomePage = () => {
   return (
-    <div>
+    <div className='welcomePage'>
         <h1>Welcome to CORE Gaming</h1>
         <div className='welcomePageText'>
             <p>Part of the Sky Betting & Gaming Group, Core Gaming is a leading developer of HTML5 games specifically produced to give the very best user experience possible on desktop and all of the most popular mobile devices, operating systems and current browsers.</p>
