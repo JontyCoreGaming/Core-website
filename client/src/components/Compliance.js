@@ -4,49 +4,33 @@ import funStopsAware from '../assets/fun-stops-aware.png';
 import aldernyGCC from '../assets/AGCC_logo.jpg';
 import GCLogo from '../assets/GCLogoWhiteBGpng.png';
 
+
 import { Row, Col, Container } from 'react-bootstrap'
-import { FiLinkedin } from 'react-icons/fi'
-import { SiGlassdoor } from 'react-icons/si'
-import CookiesModal from './CookiesModal'
+// import { FiLinkedin } from 'react-icons/fi'
+// import { SiGlassdoor } from 'react-icons/si'
+// import CookiesModal from './CookiesModal'
 
 
 const Compliance = () => {
   let toggle = true
 
   const showMore = () => {
-    //removes the link
-    
-
-    console.log('this is my first log',toggle)
-  
-    if(toggle) {
+    if (toggle) {
       document.getElementById('more').style.display = "block";
       toggle = false
       document.getElementById('elipses').innerHTML = "";
 
     } else {
       document.getElementById('more').style.display = "none";
-
       document.getElementById('elipses').innerHTML = "More ...";
-
       toggle = true
-    } 
-
-    console.log('this is the seccond toggle',toggle)
-
-
-    
+    }
+    console.log('this is the seccond toggle', toggle)
   }
   return (
 
-
-
-
-
-
     <div className='complianceCollumns '>
-
-
+      <span id='jump_to_this_location'></span>
 
       <Container className='complianceTable'>
         <Row>
@@ -74,7 +58,7 @@ const Compliance = () => {
               <p className='complianceTextItems licenseText'>CORE Gaming Limited is licensed and regulated in Great Britain by the Gambling Commission under account number 40618</p>
               <div id='more'  >
 
-              <p className='complianceTextItems licenseText'>Licensee name – CORE Gaming Limited</p>
+                <p className='complianceTextItems licenseText'>Licensee name – CORE Gaming Limited</p>
                 <p className='complianceTextItems licenseText '>Account number – 40618</p>
                 <p className='complianceTextItems licenseText '>Unique link for account – https://registers.gamblingcommission.gov.uk/40618</p>
               </div>

@@ -12,22 +12,12 @@ const coreVideo = () => {
         sources: [{
             src: video, 
             type: 'video/mp4'
-
         }]
     }
     
     return (
     <div className='video'>
-        {/* <ReactPlayer 
-            url="https://vimeo.com/690473326/8ab45c92f3?share=copy"
-            controls= {true}
-            width="940"
-            height="860"
-        /> */}
-
         <VideoJS options={videoJSOptions}/>
-
-
     </div>
   )
 }

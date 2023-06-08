@@ -7,9 +7,6 @@ body {
   
 }
 
-
-
-
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -24,11 +21,21 @@ body {
 
 /* Navbar */
 
+
+.navLink {
+  color: rgb(229,46,44) !important;
+  font-size: 1.2em;
+  text-decoration: underline !important;
+}
+
 .navbar {
   background-color: #3a4b6e;
   display: flex;
   padding-left: 1vw;
+  height: 11vh !important;
+  margin-bottom: 1vh;
 }
+
 
 /* Welcome text */
 
@@ -38,7 +45,7 @@ body {
   align-items: center;
 }
 .welcomePage h1{
-  color: red;
+  color: rgb(229,46,44);
   margin-top: 5vh;
 }
 
