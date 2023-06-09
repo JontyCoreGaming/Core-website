@@ -8,7 +8,7 @@ const Footer = () => {
   return (
     <Container className='footer'>
 
-      <Row>
+      <Row className='checkUsOutContainer'>
         <Col className='footerLinkContainer cookies'>
           <h4>Check us out </h4>
           <Row>
@@ -38,7 +38,7 @@ const Footer = () => {
       <Row>
         <Col >
           <Row> <CookiesModal/></Row>
-          <Row>© 2015 CORE Gaming Ltd</Row>
+          <Row className='copyRightFooter'>© 2015 CORE Gaming Ltd</Row>
         </Col>
       </Row>
 

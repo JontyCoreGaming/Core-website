@@ -7,17 +7,6 @@ body {
   
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    /* animation: App-logo-spin infinite 20s linear; */
-    scale: 30%;
-  }
-}
 
 /* Navbar */
 
@@ -25,14 +14,13 @@ body {
 .navLink {
   color: rgb(169,170,173) !important;
   font-size: 1.2em;
-  /* text-decoration: underline !important; */
 }
 
 .navbar {
   background-color: #3a4b6e;
   display: flex;
   padding-left: 1vw;
-  height: 11vh !important;
+  // height: 11vh !important;
   margin-bottom: 1vh;
 }
 
@@ -56,6 +44,10 @@ body {
 
 
 /* Compliance Section */
+
+.complianceMobile {
+  display: none;
+}
 
 
 .gambleAware {
@@ -103,6 +95,8 @@ body {
   h4 {
     margin: .3vh;
   }
+  padding-bottom: 0.5vh;
+
 }
 
 
@@ -149,6 +143,30 @@ body {
   margin-right: 2vw;
 }
 
+/* modal */
+
+.modal-body {
+  font-size: 0.8em;
+  display: flex;
+  flex-direction: column;
+
+  p{
+    margin-bottom: 0.8vh;
+  }
+  ul{
+    margin-bottom: 0.8vh;
+  }
+  .cookiesListHeader{
+    font-size: 1em;
+    font-weight: bold;
+    align-self: flex-start;
+  }
+}
+
+.modal-header {
+  padding: 1.5% !important;
+}
+
 /* video */
 .video-js {
   width: 80vw;
@@ -156,28 +174,145 @@ body {
   aspect-ratio: 16 / 9;
 }
 
-// .App-header {
-//   background-color: #282c34;
-//   min-height: 100vh;
-//   display: flex;
-//   flex-direction: column;
-//   align-items: center;
-//   justify-content: center;
-//   font-size: calc(10px + 2vmin);
-//   color: white;
-// }
 
 .vjs-theme-fantasy {
   --vjs-theme-fantasy--primary: rgb(169,170,173) !important;
   --vjs-theme-fantasy--secondary: #fff;
 }
 
+/* Responsive section */
 
-/* @keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/*Mobile */
+
+@media screen and (max-width: 500px){
+
+  /* Compliance */
+
+  .complianceTable {
+  display: none;
   }
-  to {
-    transform: rotate(360deg);
+  .complianceMobile {
+    display: block;
+    min-width: 90vw;
   }
-} */
+
+  .funStops {
+    max-width: 80vw;
+  }
+
+  .mobileComplianceText {
+    word-wrap: break-word
+  }
+  .mobileComplianceText div {
+  max-width: 80vw;  }
+
+    /*Footer*/
+  .footerLinkContainer {
+
+    a {
+        font-size: 1.2em;
+    }
+  
+    padding: 0 0 0 2vw
+  }
+
+  .copyRightFooter {
+    word-wrap: break-word;
+    max-width: 30vw;
+  }
+
+  .container{ 
+    padding: 0;
+  }
+
+  .footer {
+    h4{
+      font-size: 1.2em;
+      font-weight:500;
+    }
+
+  }
+
+  .footer>*:last-child {
+    align-self: flex-end;
+    margin-right: -2.5vw;
+  }
+  .footer>*:first-child {
+    margin-left: -1vw;
+  }
+
+  .link-button {
+    font-size: 0.8em;
+  }
+
+  .copyRightFooter{
+    font-size: 0.75em;
+
+  }
+
+  
+}
+
+
+
+/*Mobile*/
+@media screen and (max-width: 700px){
+
+  /* Compliance*/
+  
+  .complianceTable {
+    display: none;
+  }
+  .complianceMobile {
+    display: block;
+  }
+  .funStops {
+    max-width: 80vw;
+  }
+
+
+}
+
+/*Footer*/
+
+/* Larger mobile / small ipad*/
+@media screen and (max-width: 900px){
+
+  /* Compliance */
+  
+  .complianceTable {
+    display: none;
+  }
+  .complianceMobile {
+    display: block;
+  }
+  .complianceMobile .col p{
+    width: 60vw;
+  } 
+  .funStops {
+    max-width: 60vw;
+  }
+  .row {
+    justify-content: center;
+  }
+
+  /*Footer*/
+
+}
+
+
+/*Ipad*/
+@media screen and (max-width: 1200px){
+
+/*compliance*/
+  .CGLicence{
+    max-width: 30vw;
+    word-wrap: break-word;
+  }
+
+  /*Footer*/
+
+}
+
+
+

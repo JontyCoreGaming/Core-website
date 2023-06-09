@@ -24,7 +24,7 @@ const CookiesModal = () => {
                 </Modal.Header>
                 <Modal.Body>
                     <p>CORE Gaming LTD are strongly committed to protecting the privacy of users of this website, continually auditing back-end technologies to ensure compliance to EC Directives. To make coregaming.co.uk simpler, we sometimes place small data files on your computer. These are generically known as cookies (although may involve other file types such as HTML5 Cache). Almost every website you visit will be doing this to a certain level.</p>
-                    <p>Cookies improve things by:</p>
+                    <p className='cookiesListHeader'>Cookies improve things by:</p>
                     <ul>
                         <li>Remembering settings, so you don't have to keep re-entering them whenever you visit a new page.</li>
                         <li>Remembering information you've given (eg your username) so you don't need to keep entering it.</li>
