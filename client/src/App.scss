@@ -23,9 +23,9 @@ body {
 
 
 .navLink {
-  color: rgb(229,46,44) !important;
+  color: rgb(169,170,173) !important;
   font-size: 1.2em;
-  text-decoration: underline !important;
+  /* text-decoration: underline !important; */
 }
 
 .navbar {
@@ -94,12 +94,18 @@ body {
 /* Footer section */
 
 .footer {
-  width: 100vw;
-  background-color: #3a4b6e;  display: flex;
+  min-width: 100vw; 
+  background-color: #3a4b6e;  
+  display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-start;
+  h4 {
+    margin: .3vh;
+  }
 }
+
+
 
 .link-button {
   background-color: transparent;
@@ -115,13 +121,32 @@ body {
   align-self: flex-end;
   margin-right: 5vw;
 }
-
-.footer h3 {
-  margin: .5vh;
-}
-
 .footer>*:first-child {
   margin-left: 5vw;
+}
+
+.contactUsText {
+  font-size: .8em;
+}
+
+.checkUsOutIcon {
+  font-size: 2em;
+}
+
+.footerLinkContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.address {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.linkedInLink {
+  margin-right: 2vw;
 }
 
 /* video */
@@ -131,15 +156,20 @@ body {
   aspect-ratio: 16 / 9;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+// .App-header {
+//   background-color: #282c34;
+//   min-height: 100vh;
+//   display: flex;
+//   flex-direction: column;
+//   align-items: center;
+//   justify-content: center;
+//   font-size: calc(10px + 2vmin);
+//   color: white;
+// }
+
+.vjs-theme-fantasy {
+  --vjs-theme-fantasy--primary: rgb(169,170,173) !important;
+  --vjs-theme-fantasy--secondary: #fff;
 }
 
 

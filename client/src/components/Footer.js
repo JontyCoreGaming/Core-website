@@ -9,8 +9,8 @@ const Footer = () => {
     <Container className='footer'>
 
       <Row>
-        <Col>
-          <h3>Check us out </h3>
+        <Col className='footerLinkContainer cookies'>
+          <h4>Check us out </h4>
           <Row>
           <a href='https://www.linkedin.com/company/core-gaming-limited/mycompany/' target={'blank'} rel='noreferrer' className='checkUsOutIcon linkedInLink' >
             <FiLinkedin/>
@@ -26,12 +26,12 @@ const Footer = () => {
 
 
       <Row>
-        <Col>
-          <h3>Contact Us </h3>
-          <Row>CORE Gaming Ltd</Row>
-          <Row>2nd Floor Dominion Court</Row>
-          <Row>39 Station Road | Solihull</Row>
-          <Row>West Midlands | B91 3RT</Row>
+        <Col className='address'>
+          <h4>Contact Us </h4>
+          <Row className='contactUsText'>CORE Gaming Ltd</Row>
+          <Row className='contactUsText'>2nd Floor Dominion Court</Row>
+          <Row className='contactUsText'>39 Station Road | Solihull</Row>
+          <Row className='contactUsText'>West Midlands | B91 3RT</Row>
         </Col>
       </Row>
 
